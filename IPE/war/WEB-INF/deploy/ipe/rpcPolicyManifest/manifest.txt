@@ -1,0 +1,3 @@
+# Module ipe
+# RPC service class, partial path of RPC policy file
+byreal.apps.ipe.client.IpeService, F0116A9903BF5DB3FD43AD60DE557419.gwt.rpc

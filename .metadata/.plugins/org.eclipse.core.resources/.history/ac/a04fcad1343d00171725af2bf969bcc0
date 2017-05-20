@@ -1,0 +1,39 @@
+package byreal.apps.ipe.programs;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.SimpleEventBus;
+import com.sencha.gxt.widget.core.client.Window;
+
+import byreal.apps.ipe.client.IpeServiceAsync;
+
+public class DataShow extends Window {
+	
+	//Create a remote service proxy to talk to the server-side Greeting service.
+	private final IpeServiceAsync IPEService = GWT.create(byreal.apps.ipe.client.IpeService.class);
+
+	public DataShow(final SimpleEventBus IPEEventBus) {
+		
+		final VerticalLayoutContainer detailedVContainer = new VerticalLayoutContainer();
+		
+		/***********************************************************
+		 * 
+		 * Top ToolBar area
+		 * 		
+		 ***********************************************************/
+		
+		public SimpleComboBox<String> leagueCombobox  = new SimpleComboBox<String>(new LabelProvider<String>(){
+			@Override
+			public String getLabel(String item) {
+				return item;
+			}
+		});
+
+
+
+		leagueCombobox.setTriggerAction(TriggerAction.ALL);
+		leagueCombobox.setSize("129px", "22px");
+		leagueCombobox.setEmptyText("Select a league ...");
+		
+	}
+
+}

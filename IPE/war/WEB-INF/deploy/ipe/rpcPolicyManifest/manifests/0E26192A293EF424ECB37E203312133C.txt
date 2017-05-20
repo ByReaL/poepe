@@ -1,0 +1,2 @@
+serviceClass: byreal.apps.ipe.client.IpeService
+path: F0116A9903BF5DB3FD43AD60DE557419.gwt.rpc

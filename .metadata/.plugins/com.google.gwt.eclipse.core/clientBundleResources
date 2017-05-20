@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+<deps cu="=IPE/src&lt;byreal.apps.ipe.client.images{DesktopImages.java">
+<res path="byreal/apps/ipe/client/images/scan_16.bmp"/>
+<res path="byreal/apps/ipe/client/images/scan_16.jpg"/>
+<res path="byreal/apps/ipe/client/images/scan_16.gif"/>
+<res path="byreal/apps/ipe/client/images/scan_16.png"/>
+<res path="byreal/apps/ipe/client/images/estimator_16.bmp"/>
+<res path="byreal/apps/ipe/client/images/estimator_16.gif"/>
+<res path="byreal/apps/ipe/client/images/estimator_16.jpg"/>
+<res path="byreal/apps/ipe/client/images/estimator_16.png"/>
+</deps>
+</index>

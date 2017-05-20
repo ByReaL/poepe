@@ -1,0 +1,10 @@
+package byreal.apps.ipe.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+/**
+ * The async counterpart of <code>IpeService</code>.
+ */
+public interface IpeServiceAsync {
+	void ipeServer(String input, AsyncCallback<String> callback) throws IllegalArgumentException;
+}

@@ -1,0 +1,58 @@
+package byreal.apps.ipe.programs;
+
+import java.util.List;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.shared.SimpleEventBus;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.sencha.gxt.cell.core.client.form.ComboBoxCell.TriggerAction;
+import com.sencha.gxt.data.shared.LabelProvider;
+import com.sencha.gxt.widget.core.client.Window;
+import com.sencha.gxt.widget.core.client.form.SimpleComboBox;
+import com.sencha.gxt.widget.core.client.info.Info;
+
+import byreal.apps.ipe.client.IpeServiceAsync;
+
+public class DataShow extends Window {
+	
+	//Create a remote service proxy to talk to the server-side Greeting service.
+	private final IpeServiceAsync IPEService = GWT.create(byreal.apps.ipe.client.IpeService.class);
+
+	public DataShow(final SimpleEventBus IPEEventBus) {
+		
+		final VerticalLayoutContainer detailedVContainer = new VerticalLayoutContainer();
+		
+		/***********************************************************
+		 * 
+		 * Top ToolBar area
+		 * 		
+		 ***********************************************************/
+		
+		final SimpleComboBox<String> leagueCombobox  = new SimpleComboBox<String>(new LabelProvider<String>(){
+			@Override
+			public String getLabel(String item) {
+				return item;
+			}
+		});
+
+
+
+		leagueCombobox.setTriggerAction(TriggerAction.ALL);
+		leagueCombobox.setSize("129px", "22px");
+		leagueCombobox.setEmptyText("Select a league ...");
+		
+		IPEService.getTheLeagues(new AsyncCallback<List<String>>() {
+			public void onFailure(Throwable caught) {
+				Info.display("Error",caught.toString());
+			}
+			public void onSuccess(List<String> result) {
+				for (int i = 0; i < result.size(); i++) {
+					leagueCombobox.add(result.get(i).toString());
+						leagueCombobox.setValue("Legacy");
+				}
+			}
+		});
+		
+	}
+
+}

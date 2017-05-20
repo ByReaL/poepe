@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sencha.gxt.widget.core.client.Window"/>
+<fullyQualifiedTypeName name="byreal.apps.ipe.client.IpeServiceAsync"/>
+<fullyQualifiedTypeName name="com.google.gwt.core.client.GWT"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.shared.SimpleEventBus"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.rpc.AsyncCallback"/>
+<fullyQualifiedTypeName name="com.sencha.gxt.cell.core.client.form.ComboBoxCell.TriggerAction"/>
+<fullyQualifiedTypeName name="com.sencha.gxt.widget.core.client.form.SimpleComboBox"/>
+<fullyQualifiedTypeName name="com.sencha.gxt.data.shared.LabelProvider"/>
+<fullyQualifiedTypeName name="com.sencha.gxt.widget.core.client.info.Info"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="byreal.apps.ipe.client.images.DesktopImages"/>
+<fullyQualifiedTypeName name="byreal.apps.ipe.client.programs.DataShow"/>
+</qualifiedTypeNameHistroy>
